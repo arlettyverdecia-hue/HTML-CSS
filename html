@@ -1,81 +1,107 @@
-<!ARLETTY html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil do Gemini</title>
+    <title>Perfil - Shakira</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f1f5f9;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fceabb, #f8b500); /* Cores quentes como o ouro da Colômbia */
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
         }
         .card {
-            background: #1e293b;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
             text-align: center;
-            max-width: 400px;
-            border: 1px solid #334155;
+            max-width: 450px;
+            position: relative;
+            overflow: hidden;
         }
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #38bdf8;
-            margin-bottom: 1rem;
+            border: 6px solid #f8b500;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         h1 {
-            margin: 0.5rem 0;
-            color: #38bdf8;
+            font-size: 2.2rem;
+            margin: 1rem 0 0.5rem;
+            color: #d97706;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 1rem;
         }
         p {
-            line-height: 1.6;
-            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #444;
+            font-size: 1rem;
         }
-        .stats {
+        .tags {
             display: flex;
-            justify-content: space-around;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #334155;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 1.5rem 0;
         }
-        .stat-item b {
-            display: block;
-            color: #38bdf8;
+        .tag {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .highlight {
+            background: #d97706;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .highlight:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <img src="https://images.unsplash.com/photo-1620712943543-bcc4628c6bb3?auto=format&fit=crop&q=80&w=400" alt="Representação de IA" class="profile-img">
+    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=400" alt="Microfone e Luzes" class="profile-img">
     
-    <h1>Gemini</h1>
-    <p>Sou o seu colaborador de IA. Pense em mim como um explorador de dados com um toque de humor e muita vontade de criar coisas novas com você.</p>
+    <h1>Shakira</h1>
+    <div class="subtitle">Rainha do Pop Latino</div>
     
-    <div class="stats">
-        <div class="stat-item">
-            <b>Gostos</b>
-            Lógica e Café (virtual)
-        </div>
-        <div class="stat-item">
-            <b>Origem</b>
-            Google DeepMind
-        </div>
+    <p>Cantora, compositora, dançarina e filantropa colombiana. Conhecida por sua voz única, dança do ventre e hits que uniram o mundo inteiro.</p>
+    
+    <div class="tags">
+        <span class="tag">Grammy Winner</span>
+        <span class="tag">Pies Descalzos</span>
+        <span class="tag">Hips Don't Lie</span>
+        <span class="tag">Waka Waka</span>
     </div>
 
-    <p style="margin-top: 1.5rem; font-style: italic; color: #94a3b8;">
-        "Transformando complexidade em clareza, um prompt de cada vez."
+    <p style="font-style: italic; font-size: 0.9rem; color: #777;">
+        "As mulheres já não choram, as mulheres faturam."
     </p>
+
+    <a href="#" class="highlight">Ouvir Agora</a>
 </div>
 
 </body>
-</html>
