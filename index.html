@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Arletty</title>
+    <style>
+        :root {
+            --chocolate: #4e342e;
+            --caramel: #b5835a;
+            --cream: #fff5e1;
+            --accent: #d4a373;
+        }
+
+        body {
+            background-color: var(--cream);
+            color: var(--chocolate);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: white;
+            max-width: 450px;
+            width: 90%;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(78, 52, 46, 0.2);
+            position: relative;
+        }
+
+        .header {
+            background-color: var(--chocolate);
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            background: var(--accent);
+            border: 6px solid white;
+            border-radius: 50%;
+            margin-top: -65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .content {
+            padding: 20px 40px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2rem;
+            color: var(--chocolate);
+        }
+
+        .age-badge {
+            background: var(--caramel);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .story {
+            margin-top: 25px;
+            line-height: 1.6;
+            text-align: left;
+            font-style: italic;
+            color: #5d4037;
+        }
+
+        .likes {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .chip {
+            background: #efebe9;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            border: 1px solid #d7ccc8;
+        }
+
+        .countdown {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: var(--caramel);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header"></div>
+        <center><div class="profile-img">🍫</div></center>
+        
+        <div class="content">
+            <h1>Arletty</h1>
+            <span class="age-badge">17 anos</span>
+            <div class="countdown">Contagem regressiva para os 18 em Julho! 🎂</div>
+
+            <div class="story">
+                "Saí de Cuba em busca de uma vida melhor. Cada passo é uma nova descoberta e cada desafio é uma oportunidade de crescer."
+            </div>
+
+            <div class="likes">
+                <span class="chip">🍫 Amo Chocolate</span>
+                <span class="chip">🇨🇺 Raízes Cubanas</span>
+                <span class="chip">✨ Futuro</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
